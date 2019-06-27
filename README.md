@@ -20,7 +20,20 @@ var grade1 = 7.0
 var grade2 = 9.0
 var grade3 = 5.0
 
-// your code here
+// 
+var grade1 = 7.0
+var grade2 = 9.0
+var grade3 = 5.0
+
+var myGrade = 1.0
+
+var classAverage = (grade1 + grade2 + grade3 + myGrade) / 4
+
+if myGrade > classAverage {
+print ("Above Average")
+} else {
+print ("Below Average")
+
 ```
 
 ***
@@ -31,7 +44,15 @@ You are given a number. Print even if the number is even or odd otherwise.
 ```swift
 let number = 2
 
-// your code here
+// 
+
+var number = 34
+
+if number % 2 == 0 {
+print("even")
+} else { 
+print("odd")
+}
 ```
 
 ***
@@ -40,7 +61,7 @@ let number = 2
 You are given two numbers `a` and `b`. Print `"divisible"` if `a` is divisible by `b` and `"not divisible"` otherwise.
 
 ```swift
-var a = 12
+var a = 12 
 var b = 3
 
 // code here
@@ -68,7 +89,17 @@ You are working on a smart-fridge. The smart-fridge knows how old the eggs and b
 var baconAge = 6 // the bacon is 6 days old
 var eggsAge = 12 // eggs are 12 days old
 
-// your code here
+// 
+
+if baconAge <= 7 && eggsAge <= 21 {
+print("cook bacon and eggs")
+} else if baconAge <= 7 && eggsAge > 21 {
+print("throwout eggs")
+} else if baconAge > 7 && eggsAge <= 21 {
+print("throwout bacon")
+} else {
+print("throwout bacon and eggs")
+}
 ```
 
 ***
@@ -80,7 +111,17 @@ The above rule is valid except that every 100 years special rules apply. Years t
 ```swift
 let year = 2014
 
-// your code here
+// 
+
+if year % 400 == 0 {
+print("leap year")
+} else if year % 100 == 0 {
+print("not a leap year") 
+} else if year % 4 == 0 { 
+print("leap year")
+} else {
+print("not a leap year")
+}
 ```
 
 ***
@@ -91,7 +132,13 @@ If you use `random()` it will give you a random number within a specified range.
 ```swift
 let randomNum = Int.random(in: 0...100)
 
-// your code here
+// 
+
+if randomNumber % 2 == 0 {
+print("Heads")
+} else {
+print("Tails")
+}
 ```
 
 Hint: use an if/else block along with the `%` operator
@@ -107,7 +154,18 @@ var b = 6
 var c = 3
 var d = 4
 
-// your code here
+// 
+
+if a < b && a < c && a < d {
+print(a)
+} else if  b < a && b < c && a < d {
+print(b)
+} else if  c < b && c < a && c < d {
+print(c)
+} else if d < a && d < b && d < c {
+print(d)
+}
+
 ```
 
 ***
