@@ -64,7 +64,13 @@ You are given two numbers `a` and `b`. Print `"divisible"` if `a` is divisible b
 var a = 12 
 var b = 3
 
-// code here
+// 
+
+if a % b == 0 {
+print("divisble")
+} else {
+print("not divisble")
+}
 ```
 
 ***
@@ -77,7 +83,12 @@ var a = 2
 var b = 3
 var c = 2
 
-// your code here
+// 
+if a == b || b == c || c == d {
+print("at least two variables have the same value")
+} else {
+print("all values are different")
+}
 ```
 
 ***
